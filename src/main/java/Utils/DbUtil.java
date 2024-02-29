@@ -7,8 +7,6 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import static java.util.Calendar.getInstance;
-
 public class DbUtil {
     private static DataSource dataSource;
 

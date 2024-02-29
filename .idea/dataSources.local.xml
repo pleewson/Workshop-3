@@ -15,6 +15,7 @@
           <node kind="schema">
             <name qname="@" />
             <name qname="workshop2" />
+            <name qname="Workshop3" />
           </node>
         </introspection-scope>
       </schema-mapping>
