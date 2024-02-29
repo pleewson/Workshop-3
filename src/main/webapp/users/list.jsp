@@ -26,8 +26,8 @@
 
 <body id="page-top">
 
-<%@include file="header12.jsp"%>
-<%@include file="footer12.jsp"%>
+<%@include file="header.jsp"%>
+<%@include file="footer.jsp"%>
 
 </body>
 

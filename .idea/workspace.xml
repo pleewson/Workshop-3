@@ -10,27 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4369164e-eb96-4f1c-9862-aa023b42a9fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/users/AddUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/users/DeleteUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/createUser12.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/deleteUser12.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9eb8bb2-2b2b-4d0e-962e-df335c568d63.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9eb8bb2-2b2b-4d0e-962e-df335c568d63.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9eb8bb2-2b2b-4d0e-962e-df335c568d63/storage_v2/_src_/schema/workshop2.i38UQg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9eb8bb2-2b2b-4d0e-962e-df335c568d63/storage_v2/_src_/schema/workshop2.i38UQg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/users/ShowDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/editUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/showDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DbUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/users/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/users/UpdateUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UpdateUserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/UserListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/fontawesome-free/less/_icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/fontawesome-free/less/_icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/fontawesome-free/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/footer12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/footer12.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/header12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/header12.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list12.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/createUser12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/createUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/deleteUser12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/deleteUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/footer12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/header12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list12.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +85,10 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/users" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/theme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/users" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.85">
@@ -212,7 +210,7 @@
       <workItem from="1709033912228" duration="1991000" />
       <workItem from="1709036193947" duration="3246000" />
       <workItem from="1709039488956" duration="5537000" />
-      <workItem from="1709045240977" duration="15631000" />
+      <workItem from="1709045240977" duration="22575000" />
     </task>
     <servers />
   </component>

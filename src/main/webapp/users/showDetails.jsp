@@ -30,7 +30,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/users/list">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -107,53 +107,23 @@
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <%--                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>--%>
-                    <ul class="user-list">
-                        <c:forEach var="user" items="${users}">
-                            <li>
-                                <span class="user-property">id:</span>
-                                <span class="user-value">${user.id}</span>
-                            </li>
-                            <li>
-                                <span class="user-property">Username:</span>
-                                <span class="user-value">${user.userName}</span>
-                            </li>
-                            <li>
-                                <span class="user-property">Email:</span>
-                                <span class="user-value">${user.email}</span>
-                            </li>
-                            <li>
-                                <span class="user-property">Password:</span>
-                                <span class="user-value">${user.password}</span>
-                            </li>
 
-                            <span class="user-property">Actions:</span>
-                            <br>
-                            <span class="user-value">
-<!-- Tworzymy link "Delete" z wywołaniem funkcji JavaScript -->
-<a href="#" onclick="confirmDelete(${user.id})">Delete</a>
-
-<script>
-    // Funkcja JavaScript do potwierdzenia usunięcia użytkownika
-    function confirmDelete(userId) {
-        // Wyświetlamy okno dialogowe z pytaniem o potwierdzenie
-        if (confirm('Czy na pewno chcesz usunąć użytkownika o ID ' + userId + '?')) {
-            // Jeśli użytkownik potwierdzi, przekierowujemy go na stronę usuwania użytkownika
-            window.location.href = '/users/deleteUser?id=' + userId;
-        }
-    }
-</script>            <a href="#" onclick="editUser(${user.id})">Edit</a>
-            <a href="#" onclick="showUser(${user.id})">Show</a>
-                             </span>
-                            <br>
-
-                            <br>
-                        </c:forEach>
-                    </ul>
-                    <a href="/users/createUser" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i> Create new User</a>
-                </div>
-
+                    <li>
+                        <span class="user-property">id:</span>
+                        <span class="user-value">${user.id}</span>
+                    </li>
+                    <li>
+                        <span class="user-property">Username:</span>
+                        <span class="user-value">${user.userName}</span>
+                    </li>
+                    <li>
+                        <span class="user-property">Email:</span>
+                        <span class="user-value">${user.email}</span>
+                    </li>
+                    <li>
+                        <span class="user-property">Password:</span>
+                        <span class="user-value">${user.password}</span>
+                    </li>
 
                 <!-- Content Row -->
 
@@ -171,6 +141,8 @@
     <!-- End of Main Content -->
 
 </div>
+
+<%@include file="footer.jsp"%>
 
 </body>
 

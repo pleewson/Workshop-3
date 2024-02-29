@@ -9,15 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet("/users/list")
-public class UserListServlet extends HttpServlet {
+@WebServlet("/users/showDetails")
+public class ShowDetailsServlet  extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<User> users = UserDAO.findAll();
-        req.setAttribute("users", users);
+        int id = Integer.parseInt(req.getParameter("id"));
+        User user = UserDAO.read(id);
+        req.setAttribute("user", user);
+        req.getServletContext().getRequestDispatcher("/users/showDetails.jsp").forward(req,resp);
 
-        getServletContext().getRequestDispatcher("/users/list.jsp").forward(req, resp);
+
     }
 }

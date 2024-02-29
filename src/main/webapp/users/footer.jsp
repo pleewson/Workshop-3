@@ -27,6 +27,12 @@
 </head>
 <body>
 
+<!-- Content Row -->
+
+<div class="row">
+
+    <!-- Area Chart -->
+
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
@@ -48,7 +54,6 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-header12.jsp
 <!-- Bootstrap core JavaScript-->
 <script src="/theme/vendor/jquery/jquery.min.js"></script>
 <script src="/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -17,7 +17,7 @@ public class UserDAO {
 
             preStmt.setString(1, user.getEmail());
             preStmt.setString(2, user.getUserName());
-            preStmt.setString(3, user.getPassword());
+            preStmt.setString(3, BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
             preStmt.executeUpdate();
 
             try (ResultSet rs = preStmt.getGeneratedKeys()) {
@@ -35,7 +35,7 @@ public class UserDAO {
         }
     }
 
-    public User read(int userId) {
+    public static User read(int userId) {
         final String SELECT_USER_BY_ID_QUERY = "SELECT * FROM users WHERE id = " + userId;
 
         try (Connection conn = DbUtil.getConnection();
@@ -63,7 +63,7 @@ public class UserDAO {
     }
 
 
-    public void update(User user) {
+    public static void update(User user) {
         String UPDATE_USER_QUERY = "UPDATE users SET email = ?, username = ?, password = ? WHERE id = ?;";
 
         try (Connection conn = DbUtil.getConnection();
