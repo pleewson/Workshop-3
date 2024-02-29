@@ -4,10 +4,12 @@ import entity.User;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
-    public User createUser(User user) {
+    public static User createUser(User user) {
         final String CREATE_USER_QUERY = "INSERT INTO users (email, userName, password) VALUES (?, ?, ?);";
 
         try (Connection conn = DbUtil.getConnection();
@@ -82,7 +84,7 @@ public class UserDAO {
     }
 
 
-    public void delete(int userId) {
+    public static void delete(int userId) {
         String DELETE_USER_QUERY = "DELETE FROM users WHERE id = ?";
 
         try (Connection conn = DbUtil.getConnection();
@@ -96,6 +98,34 @@ public class UserDAO {
             System.out.println("Problem with deleteing User");
             ex.printStackTrace();
         }
+    }
+
+    public static List<User> findAll() {
+        String SELECT_ALL_USERS = "SELECT * FROM users;";
+        List<User> allUsers = new ArrayList<>();
+
+
+        try (Connection conn = DbUtil.getConnection()) {
+            PreparedStatement preStmt = conn.prepareStatement(SELECT_ALL_USERS);
+            ResultSet rs = preStmt.executeQuery();
+
+            while (rs.next()) {
+                User readUser = new User();
+                readUser.setId(rs.getInt("id"));
+                readUser.setEmail(rs.getString("email"));
+                readUser.setUserName(rs.getString("username"));
+                readUser.setPassword(rs.getString("password"));
+
+                allUsers.add(readUser);
+            }
+
+            return allUsers;
+        } catch (SQLException ex) {
+            System.out.println("Problems with loading data");
+            ex.printStackTrace();
+        }
+
+        return null;
     }
 
 }
