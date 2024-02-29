@@ -14,7 +14,7 @@ import java.io.IOException;
 public class AddUserServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getServletContext().getRequestDispatcher("/users/createUser12.jsp").forward(req,resp);
+        req.getServletContext().getRequestDispatcher("/users/createUser.jsp").forward(req,resp);
     }
 
     @Override

@@ -32,7 +32,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/users/list">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -112,7 +112,7 @@
                         <h1 class="h3 mb-0 text-gray-800">Create new User</h1>
                         <ul>
                             <li>Name: <input type="text" name="userName"></li>
-                            <li>Password: <input type="text" name="password"></li>
+                            <li>Password: <input type="password" name="password"></li>
                             <li>Email: <input type="text" name="email"></li>
                             <li><input type="submit"></li>
                         </ul>
@@ -138,7 +138,7 @@
 
     </div>
 
-    <%@include file="footer12.jsp" %>
+    <%@include file="footer.jsp" %>
 
 
 </form>
